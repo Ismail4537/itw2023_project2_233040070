@@ -4,54 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Belin Cake</title>
 </head>
 <body>
-    <div class="header">
+    <nav>
         <h1>Belin Cake</h1>
-        <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="about" class="hero">
+        <img src="img/logo.jpg" alt="">
+    </div>
+    <main>
+        <div class="about">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut quis reiciendis consequatur vitae repellendus perferendis ipsam sint! Tenetur blanditiis atque corporis dolorum recusandae ad nisi fugit libero doloremque commodi!</p>
+        </div>
+        <div id="menu">
+            <h1>Menu</h1>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#footer">Contact</a></li>
+                <li>Aneka Cake</li>
+                <li>Kue kering</li>
+                <li>Snack Box</li>
+                <li>Roti buaya</li>
+                <li>Pastry</li>
             </ul>
-        </nav>
-    </div>
-    <div id="hero"></div>
-    <div id="about">
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut quis reiciendis consequatur vitae repellendus perferendis ipsam sint! Tenetur blanditiis atque corporis dolorum recusandae ad nisi fugit libero doloremque commodi!</p>
-    </div>
-    <div id="menu"></div>
+        </div>
+    </main>
     <div id="footer">
         <h1>Contact Me</h1>
-        <form action="">
-            <table>
-                <tr>
-                    <td>Name</td>
-                    <td>:</td>
-                    <td><input type="text" name="" id=""></td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td>:</td>
-                    <td><input type="email" name="" id=""></td>
-                </tr>
-                <tr>
-                    <td>Message</td>
-                    <td>:</td>
-                    <td><textarea name="" id="" cols="22" rows="5"></textarea></td>
-                </tr>
-            </table>
-        </form>
-        <ul>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-        </ul>
-        <footer><p>Copyright 2023</p></footer>
+        <div class="contact">
+            <form action="">
+                <table>
+                    <tr>
+                        <td class="tdwidth">Name</td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td><textarea name="" id="" cols="22" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input class="submit" type="submit" value="Send"></td>
+                    </tr>
+                </table>
+            </form>
+            <ul>
+                <li><img src="img/Logo-WA-Hitam-Putih.png" alt="">+62-859-5636-5656</li>
+                <li><img src="img/logo-ig.png" alt="">Leni Belin</li>
+                <li><img src="img/facebook-logo.png" alt="">Leni Belin</li>
+                <li><img src="img/location-logo.png" alt="">Jln. Bukit pakar utara no.32c</li>
+            </ul>
+        </div>
+        <footer>Copyright 2023</footer>
     </div>
 </body>
     <script src="js/bootstrap.min.js"></script>

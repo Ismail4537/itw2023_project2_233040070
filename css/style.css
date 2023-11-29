@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: solid; */
+}
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(248, 155, 169);
+    color: white;
+    border-bottom: 5px solid rgb(180, 111, 123);
+}
+nav h1{
+    font-family: 'Pacifico', cursive;
+}
+nav h1,
+nav ul{
+    margin: 10px 0;
+}
+nav ul{
+    display: flex; 
+    width: 400px;
+    justify-content: space-evenly;
+    list-style: none;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero{
+    display: flex;
+    height: 500px;
+}
+.hero img{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+main{
+    border-top: 5px solid rgb(147, 197, 147);
+    background-color: pink;
+    padding: 10px 10px;
+}
+
+.about p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#menu{
+    margin: 100px 20px;
+    padding: 10px 0;
+    border-top: 10px solid rgb(147, 197, 147);
+    border-bottom: 10px solid rgb(114, 155, 114);
+}
+#menu ul{
+    display: grid;
+    list-style: none;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#footer{
+    background-color: rgb(14, 14, 14);
+    padding: 1px 0;
+    color: white;
+}
+#footer table{
+    text-align: center;
+}
+#footer h1{
+    background-color: rgb(30, 30, 30);
+    padding: 10px 20px;
+    border-bottom: 4px solid rgb(44, 44, 44);
+}
+#footer ul{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: start;
+}
+#footer img{
+    width: 40px;
+    margin: 0 10px;
+}
+#footer li{
+    margin: 4px 0;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.submit{
+    width: 100px;
+    border-radius: 15px;
+}
+.tdwidth{
+    width: 100px;
+}
+
+footer{
+    margin: 1px 0;
+    background-color: rgb(23, 23, 23);
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
