@@ -14,6 +14,8 @@ nav{
     border-bottom: 5px solid rgb(180, 111, 123);
 }
 nav h1{
+    text-align: center;
+    width: 50%;
     font-family: 'Pacifico', cursive;
 }
 nav h1,
@@ -22,7 +24,7 @@ nav ul{
 }
 nav ul{
     display: flex; 
-    width: 400px;
+    width: 100%;
     justify-content: space-evenly;
     list-style: none;
 }
