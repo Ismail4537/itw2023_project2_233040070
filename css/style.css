@@ -12,6 +12,7 @@ nav{
     background-color: rgb(248, 155, 169);
     color: white;
     border-bottom: 5px solid rgb(180, 111, 123);
+    z-index: 999;
 }
 nav h1{
     text-align: center;
@@ -29,8 +30,50 @@ nav ul{
     list-style: none;
 }
 nav a{
+    font-weight: bold;
     color: white;
     text-decoration: none;
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    left: -10px;
+    top: -3px;
+    height: 28px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.menu-toggle span{
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(1px, 1px);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(1px, -2px);
 }
 
 .hero{
@@ -58,15 +101,47 @@ main{
 
 #menu{
     margin: 100px 20px;
-    padding: 10px 0;
+    margin-bottom: 10px;
     border-top: 10px solid rgb(147, 197, 147);
     border-bottom: 10px solid rgb(114, 155, 114);
 }
 #menu ul{
     display: grid;
     list-style: none;
-    justify-content: space-evenly;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, 250px);
+    place-content: center;
+    gap: 10px;
+}
+#menu li{
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 3px 3px 10px;
+}
+#menu li img{
+    width: 200px;
+}
+.order{
+    border: solid white;
+    background-color: rgb(0, 185, 0);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin: 0 20px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+.order img{
+    width: 50px;
 }
 
 #footer{
@@ -76,6 +151,7 @@ main{
 }
 #footer table{
     text-align: center;
+    width: 100%;
 }
 #footer h1{
     background-color: rgb(30, 30, 30);
@@ -97,7 +173,9 @@ main{
     margin: 4px 0;
 }
 .contact{
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
     justify-content: space-evenly;
 }
 .submit{
@@ -114,4 +192,58 @@ footer{
     font-size: 12px;
     text-align: center;
     padding: 5px;
+}
+/* responsive */
+@media screen and (max-width: 768px){
+    nav ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+        flex-direction: column;
+        width: auto;
+        transition: all 1s;
+        /* background-color: rgb(248, 155, 169); */
+        background: linear-gradient(rgb(248, 155, 169),
+                                    rgb(255, 101, 125));
+        opacity: 1;
+        transform: translateY(-100px);
+        margin: auto;
+        padding: 10px;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul.slide{
+        opacity: 1;
+        height: 600px;
+        z-index: -1;
+        transform: translateY(0px);
+        border-bottom: 10px solid rgb(180, 111, 123);
+    }
+}
+@media screen and (max-width: 576px){
+    .order{
+        font-size: 15px;
+    }
+    .order img{
+        width: 30px;
+    }
+
+    #footer{
+        overflow-x: hidden;
+    }
+    #footer table{
+        font-size: 12px;
+    }
+    #footer img{
+        width: 20px;
+    }
+    #footer ul{
+        font-size: 12px;
+        align-items: center;
+    }
 }
