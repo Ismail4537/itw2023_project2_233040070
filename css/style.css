@@ -84,12 +84,12 @@ nav a{
     margin: auto;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 2px solid transparent;
     border-radius: 100%;
 }
 
 main{
-    border-top: 5px solid rgb(147, 197, 147);
+    border-top: 8px solid rgb(199, 134, 145);
     background-color: pink;
     padding: 10px 10px;
 }
@@ -174,8 +174,7 @@ main{
 }
 .contact{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    display: flex;
     justify-content: space-evenly;
 }
 .submit{
@@ -224,6 +223,9 @@ footer{
         transform: translateY(0px);
         border-bottom: 10px solid rgb(180, 111, 123);
     }
+    #footer ul{
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 576px){
     .order{
@@ -233,6 +235,9 @@ footer{
         width: 30px;
     }
 
+    .contact{
+        flex-direction: column;
+    }
     #footer{
         overflow-x: hidden;
     }
