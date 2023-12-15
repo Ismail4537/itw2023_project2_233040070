@@ -1,85 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>BelinCake</title>
-</head>
-<body>
-    <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.jpg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Belin Cake</title>
+  </head>
+  <body>
+    <!-- Nav start -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+      <div class="container">
         <h1>BelinCake</h1>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#footer">Contact</a></li>
-        </ul>
-        <div class="menu-toggle">
-            <input type="checkbox" name="" id="">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#order">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <div id="about" class="hero">
-        <img src="img/logo.jpg" alt="">
-    </div>
-    <main>
-        <div class="about">
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut quis reiciendis consequatur vitae repellendus perferendis ipsam sint! Tenetur blanditiis atque corporis dolorum recusandae ad nisi fugit libero doloremque commodi!</p>
-        </div>
-        <div id="menu">
+    <!-- Nav End -->
+    <!-- Hero start -->
+    <section class="hero justify-content-center" id="home">
+      <img src="img/logo.jpg" alt="" class="rounded-circle" height="250" />
+    </section>
+    <!-- Hero end -->
+    <!-- About start -->
+    <section class="about text-center" id="about">
+      <h1>About</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, temporibus dolorem animi iste possimus, porro nulla velit consequatur odit similique error numquam. Ipsa odio delectus architecto facere unde. Voluptas molestiae
+        asperiores ducimus cumque esse distinctio ut nihil, sit vel excepturi. Veritatis fuga eius aspernatur incidunt quibusdam dolorum doloremque accusamus? Aliquid.
+      </p>
+    </section>
+    <!-- About end -->
+    <!-- Menu start -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mb-3">
             <h1>Menu</h1>
-            <ul>
-                <li><img src="img/bolu.jpg" alt=""> Aneka Cake</li>
-                <li><img src="img/kuekering.jpg" alt=""> Kue kering</li>
-                <li><img src="img/snackbox.jpg" alt=""> Snack Box</li>
-                <li><img src="img/rotibuaya.jpg" alt="">Aneka Roti</li>
-                <li><img src="img/bolenpisang.jpg" alt="">Pastry</li>
-            </ul>
+          </div>
         </div>
-        <h2>Order :</h2>
-        <div class="order">
-            <img src="img/Logo-WA-Hitam-Putih.png" alt="">
-            +62-859-5636-5656
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/bolu.jpg" class="card-img-top" alt="kue" />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Aneka Bolu</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/rotibuaya.jpg" class="card-img-top" alt="roti" />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Aneka Roti</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/bolenpisang.jpg" class="card-img-top" alt="pastry" />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Pastry</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/kuekering.jpg" class="card-img-top" alt="kuekering" />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Kue Kering</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/snacktower.jpg" class="card-img-top" alt="snacktower" />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Snacktower</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/buketuang.jpg" class="card-img-top" alt="buketuang" />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Buket Uang</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/pernasian.jpg" class="card-img-top" alt="pernasian" />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Pernasian</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/snackbox.jpg" class="card-img-top" alt="snackbox" />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Snack Box</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
-    <div id="footer">
-        <h1>Contact Me</h1>
-        <div class="contact">
-            <form action="">
-                <table>
-                    <tr>
-                        <td class="tdwidth">Name</td>
-                        <td><input type="text" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td><input type="email" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>Message</td>
-                        <td><textarea name="" id="" cols="22" rows="5"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><input class="submit" type="submit" value="Send"></td>
-                    </tr>
-                </table>
+      </div>
+    </section>
+    <!-- Menu End -->
+    <!-- Order start -->
+    <section class="order" id="order">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mb-3">
+            <h1>Aturan Pemesanan</h1>
+          </div>
+        </div>
+        <div class="fs-3 fw-bold">
+          <ul>
+            <li>Belin Cake berlokasi di jln. Bukit Pakar Utara no.32c Dago Pakar Bandung</li>
+            <li>Dibuat sesuai pesanan tidak menerima order dadakan</li>
+            <li>Pemesanan paling lambat h-5 Pembayaran melalui transfer paling lambat h-2</li>
+            <li>Pesanan diambil sendiri atau dikirim menggunakan taksi online</li>
+            <li>Tidak menerima COD</li>
+          </ul>
+          <p>Terima kasih ❤</p>
+        </div>
+        <h1>Order :</h1>
+        <div class="number fw-bold text-center p-2">
+          <img src="img/Logo-WA-Hitam-Putih.png" alt="walogo" width="50" />
+          +62-859-5636-5656
+        </div>
+      </div>
+    </section>
+    <!-- Order end -->
+    <!-- Contact start -->
+    <section id="contact" class="text-bg-dark">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-3">
+            <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" />
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" />
+                </div>
+                <div class="mb-3">
+                  <label for="Textarea" class="form-label">Message</label>
+                  <textarea class="form-control" id="Textarea" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
             </form>
-            <ul>
-                <li><img src="img/logo-ig.png" alt="">Leni Belin</li>
-                <li><img src="img/facebook-logo.png" alt="">Leni Belin</li>
-                <li><img src="img/location-logo.png" alt="">Jln. Bukit pakar utara no.32c</li>
-            </ul>
+          </div>
         </div>
-        <footer>©Copyright 2023. BelinCake</footer>
-    </div>
-</body>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+        <ul class="col flex-grow-0 justify-content-evenly text-center">
+            <li><img src="img/logo-ig.png" alt="">Leni Belin</li>
+            <li><img src="img/facebook-logo.png" alt="">Leni Belin</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Contact end -->
+    <!-- Footer start -->
+    <p class="text-center bg-black text-bg-dark mb-0">©Copyright 2023.</p>
+    <!-- Footer End -->
+  </body>
+  <script src="js/bootstrap.min.js"></script>
 </html>
