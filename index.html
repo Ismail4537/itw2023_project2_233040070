@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="shortcut icon" href="img/logo.jpg" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,10 +20,10 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse text-end" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -43,16 +44,24 @@
     <!-- Nav End -->
     <!-- Hero start -->
     <section class="hero justify-content-center" id="home">
-      <img src="img/logo.jpg" alt="" class="rounded-circle" height="250" />
+      <img data-aos="fade" src="img/logo.jpg" alt="" class="rounded-circle" height="250" />
     </section>
     <!-- Hero end -->
     <!-- About start -->
     <section class="about text-center" id="about">
-      <h1>About</h1>
-      <p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ec8083" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,202.7C384,192,480,160,576,144C672,128,768,128,864,154.7C960,181,1056,235,1152,250.7C1248,267,1344,245,1392,234.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+      <h1 data-aos="fade-up">About</h1>
+      <p data-aos="fade-up">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, temporibus dolorem animi iste possimus, porro nulla velit consequatur odit similique error numquam. Ipsa odio delectus architecto facere unde. Voluptas molestiae
         asperiores ducimus cumque esse distinctio ut nihil, sit vel excepturi. Veritatis fuga eius aspernatur incidunt quibusdam dolorum doloremque accusamus? Aliquid.
       </p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#93c593" fill-opacity="1" d="M0,256L120,245.3C240,235,480,213,720,208C960,203,1200,213,1320,218.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+        </path>
+      </svg>
     </section>
     <!-- About end -->
     <!-- Menu start -->
@@ -60,12 +69,12 @@
       <div class="container">
         <div class="row text-center">
           <div class="col mb-3">
-            <h1>Menu</h1>
+            <h1 data-aos="fade-up">Menu</h1>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
               <img src="img/bolu.jpg" class="card-img-top" alt="kue" />
               <div class="card-body">
                 <p class="card-text fw-bold text-center">Aneka Bolu</p>
@@ -73,7 +82,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
               <img src="img/rotibuaya.jpg" class="card-img-top" alt="roti" />
               <div class="card-body">
                 <p class="card-text fw-bold text-center">Aneka Roti</p>
@@ -81,7 +90,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
               <img src="img/bolenpisang.jpg" class="card-img-top" alt="pastry" />
               <div class="card-body">
                 <p class="card-text fw-bold text-center">Pastry</p>
@@ -89,7 +98,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
               <img src="img/kuekering.jpg" class="card-img-top" alt="kuekering" />
               <div class="card-body">
                 <p class="card-text fw-bold text-center">Kue Kering</p>
@@ -97,7 +106,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
               <img src="img/snacktower.jpg" class="card-img-top" alt="snacktower" />
               <div class="card-body">
                 <p class="card-text fw-bold text-center">Snacktower</p>
@@ -105,7 +114,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
               <img src="img/buketuang.jpg" class="card-img-top" alt="buketuang" />
               <div class="card-body">
                 <p class="card-text fw-bold text-center">Buket Uang</p>
@@ -113,7 +122,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
               <img src="img/pernasian.jpg" class="card-img-top" alt="pernasian" />
               <div class="card-body">
                 <p class="card-text fw-bold text-center">Pernasian</p>
@@ -121,7 +130,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
               <img src="img/snackbox.jpg" class="card-img-top" alt="snackbox" />
               <div class="card-body">
                 <p class="card-text fw-bold text-center">Snack Box</p>
@@ -134,26 +143,33 @@
     <!-- Menu End -->
     <!-- Order start -->
     <section class="order" id="order">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#93c593" fill-opacity="1" d="M0,96L120,101.3C240,107,480,117,720,106.7C960,96,1200,64,1320,48L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+      </path>
+    </svg>
       <div class="container">
         <div class="row text-center">
           <div class="col mb-3">
-            <h1>Aturan Pemesanan</h1>
+            <h1 data-aos="fade-up">Aturan Pemesanan</h1>
           </div>
         </div>
         <div class="fs-3 fw-bold">
-          <ul>
-            <li>Belin Cake berlokasi di jln. Bukit Pakar Utara no.32c Dago Pakar Bandung</li>
-            <li>Dibuat sesuai pesanan tidak menerima order dadakan</li>
-            <li>Pemesanan paling lambat h-5 Pembayaran melalui transfer paling lambat h-2</li>
-            <li>Pesanan diambil sendiri atau dikirim menggunakan taksi online</li>
-            <li>Tidak menerima COD</li>
-          </ul>
-          <p>Terima kasih ❤</p>
-        </div>
-        <h1>Order :</h1>
-        <div class="number fw-bold text-center p-2">
-          <img src="img/Logo-WA-Hitam-Putih.png" alt="walogo" width="50" />
-          +62-859-5636-5656
+          <div data-aos="fade-up">
+            <ul>
+              <li>Belin Cake berlokasi di jln. Bukit Pakar Utara no.32c Dago Pakar Bandung</li>
+              <li>Dibuat sesuai pesanan tidak menerima order dadakan</li>
+              <li>Pemesanan paling lambat h-5 Pembayaran melalui transfer paling lambat h-2</li>
+              <li>Pesanan diambil sendiri atau dikirim menggunakan taksi online</li>
+              <li>Tidak menerima COD</li>
+            </ul>
+            <p>Terima kasih ❤</p>
+          </div>
+        <div data-aos="fade-up">
+          <h1>Order :</h1>
+          <div class="number fw-bold text-center p-2">
+            <img src="img/Logo-WA-Hitam-Putih.png" alt="walogo" width="50" />
+            +62-859-5636-5656
+          </div>
         </div>
       </div>
     </section>
@@ -163,11 +179,11 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>Contact Me</h2>
+            <h1 class="p-2">Contact Me</h1>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-6 mb-3">
+          <div class="col-md-7 mb-3">
             <form>
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
@@ -184,9 +200,17 @@
             </form>
           </div>
         </div>
-        <ul class="col flex-grow-0 justify-content-evenly text-center">
-            <li><img src="img/logo-ig.png" alt="">Leni Belin</li>
-            <li><img src="img/facebook-logo.png" alt="">Leni Belin</li>
+        <ul class="d-flex justify-content-evenly text-center">
+            <li>
+                <a class="text-white text-decoration-none" href="https://www.instagram.com/lenibelin/">
+                    <img src="img/logo-ig.png" alt="logoig">Leni Belin
+                </a>
+            </li>
+            <li>
+                <a class="text-white text-decoration-none" href="https://www.facebook.com/belin.jumong">
+                    <img src="img/facebook-logo.png" alt="logofb">Leni Belin
+                </a>
+            </li>
         </ul>
       </div>
     </section>
@@ -196,4 +220,8 @@
     <!-- Footer End -->
   </body>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

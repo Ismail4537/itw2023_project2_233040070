@@ -15,19 +15,31 @@ nav h1 {
   background-position: center;
 }
 section {
-  padding: 5rem 2rem;
+  padding-top: 5rem;
   background-color: pink;
 }
+#about {
+  padding-top: 0;
+}
+#about p {
+  margin: 10px 50px;
+}
 .menu {
-  padding: 5rem 0;
-  border-top: 10px solid rgb(147, 197, 147);
-  border-bottom: 10px solid rgb(114, 155, 114);
+  background-color: #93c593;
 }
 .menu h1 {
   padding-bottom: 2rem;
 }
-.card {
+#order {
+  padding-top: 0;
+  padding-bottom: 8rem;
+}
+.card img {
   padding: 10px;
+  transition: 0.5s;
+}
+.card img:hover {
+  padding: 5px;
 }
 .list {
   border: solid;
@@ -37,19 +49,36 @@ section {
   border: solid white;
   background-color: rgb(0, 185, 0);
   border-radius: 30px;
+  transition: 0.5s;
 }
 #contact {
   border-top: 10px solid #191c1e;
 }
 #contact ul li {
+  border-radius: 15px;
+  padding: 10px;
   list-style: none;
+  transition: 0.15s;
 }
+#contact ul li:hover {
+  background-color: #44494e;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px rgb(55, 55, 55);
+}
+
 #contact img {
   width: 50px;
   margin: 10px;
 }
-#contact h2 {
-  padding: 1rem;
+
+#contact h1 {
   background-color: #23292e;
   border-radius: 15px;
+  box-shadow: 2px 2px 2px black;
+}
+.number {
+  font-size: 15px;
+}
+.number:hover {
+  font-size: 20px;
 }
