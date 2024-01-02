@@ -7,12 +7,14 @@ nav h1 {
   font-family: "Pacifico", cursive;
 }
 .hero {
-  padding-top: 8rem;
-  display: flex;
-  height: 500px;
-  background-image: url(../img/310457575_10217095100168833_5848403222769671290_n.jpg);
+  padding-top: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.82)), url(../img/310457575_10217095100168833_5848403222769671290_n.jpg);
   background-size: cover;
   background-position: center;
+}
+.hero div img {
+  width: 280px;
 }
 section {
   padding-top: 5rem;
