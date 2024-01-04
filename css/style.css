@@ -36,7 +36,6 @@ section {
   padding-bottom: 2rem;
 }
 #order {
-  padding-top: 0;
   padding-bottom: 8rem;
 }
 .card img {
@@ -79,4 +78,9 @@ section {
   background-color: #23292e;
   border-radius: 15px;
   box-shadow: 2px 2px 2px black;
+}
+
+.carousel-caption {
+  backdrop-filter: blur(10px);
+  text-shadow: 1px 1px rgb(0, 0, 0);
 }
