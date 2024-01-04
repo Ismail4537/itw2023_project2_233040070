@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden;
+}
 nav {
   background-color: rgb(252, 144, 162);
   border-bottom: 5px solid rgb(219, 104, 123);
@@ -51,7 +54,6 @@ section {
   border: solid white;
   background-color: rgb(0, 185, 0);
   border-radius: 30px;
-  transition: 0.5s;
 }
 #contact {
   border-top: 10px solid #191c1e;
@@ -77,10 +79,4 @@ section {
   background-color: #23292e;
   border-radius: 15px;
   box-shadow: 2px 2px 2px black;
-}
-.number {
-  font-size: 15px;
-}
-.number:hover {
-  font-size: 20px;
 }
