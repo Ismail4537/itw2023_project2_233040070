@@ -185,21 +185,35 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-7 mb-3">
-            <form>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="alert my-alert alert-success alert-dismissible fade show d-none" role="alert">
+                Pesan <strong>TELAH</strong> terkirim
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="alert my-danger alert-danger alert-dismissible fade show d-none" role="alert">
+                Pesan <strong>Tidak</strong> terkirim
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <form name="contact">
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="name" />
+                  <input required name="nama" type="text" class="form-control" id="name" aria-describedby="name" />
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="email" />
+                  <input name="email" type="email" class="form-control" id="email" aria-describedby="email" value="@gmail.com" />
                 </div>
                 <div class="mb-3">
-                  <label for="Textarea" class="form-label">Message</label>
-                  <textarea class="form-control" id="Textarea" rows="3"></textarea>
+                  <label for="pesan" class="form-label">Pesan</label>
+                  <textarea required name="pesan" class="form-control" id="pesan" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
+                <button type="submit" class="btn btn-primary btn-kirim btn-send">Submit</button>
+                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                  <span role="status">Loading...</span>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
         <ul class="d-flex justify-content-evenly text-center">
@@ -223,6 +237,36 @@
   </body>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyATCj94b8w3y-Hh-yS-O8-3BcnxkHwOGy_-I5Oj5O8R7SHElZWziZ3y3Jn3thig2mP/exec'
+    const form = document.forms['contact']
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnLoading = document.querySelector('.btn-loading');
+    const myAlert = document.querySelector('.my-alert');
+    const myDanger = document.querySelector('.my-danger');
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      // pas submit di pencet
+      // kirimnya ilang, loadingnya keluar
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          // tombol kirimnya muncul, loadingnya ilang
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          // Alert nya muncul
+          myAlert.classList.toggle('d-none');
+          // reset
+          form.reset();
+          console.log('Success!', response);
+        })
+        .catch(error => {
+          myDanger.classList.toggle('d-none');
+          console.error('Error!', error.message);
+        })
+    })
+  </script>
   <script>
     AOS.init();
   </script>
