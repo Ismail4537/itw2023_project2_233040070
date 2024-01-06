@@ -42,10 +42,6 @@ section {
 .card img:hover {
   padding: 5px;
 }
-.list {
-  border: solid;
-  padding: 0;
-}
 .number {
   border: solid white;
   background-color: rgb(0, 185, 0);
